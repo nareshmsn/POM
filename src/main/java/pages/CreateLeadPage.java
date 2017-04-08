@@ -33,32 +33,32 @@ public class CreateLeadPage extends LeafTapsWrappers  {
 	}
 	
 	public CreateLeadPage selectSource(String source){
-		selectVisibileTextById("CreateLead.Source.Id", source);
+		selectVisibileTextById(prop.getProperty("CreateLead.Source.Id"), source);
 		return this;
 	}
 	
 	public CreateLeadPage selectMarketingCampaign(String MarketCampaign){
-		selectVisibileTextById("CreateLead.MarketingCampaign.Id", MarketCampaign);
+		selectVisibileTextById(prop.getProperty("CreateLead.MarketingCampaign.Id"), MarketCampaign);
 		return this;
 	}
 	
 	public CreateLeadPage enterAnnualRevenue(String Annualrevenue){
-		enterById("CreateLead.AnnualRevenue.Id", Annualrevenue);
+		enterById(prop.getProperty("CreateLead.AnnualRevenue.Id"), Annualrevenue);
 		return this;
 	}
 	
 	public CreateLeadPage selectCurrency(String Currency){
-		selectVisibileTextById("CreateLead.Currency.Id", Currency);
+		selectVisibileTextById(prop.getProperty("CreateLead.Currency.Id"), Currency);
 		return this;
 	}
 	
 	public CreateLeadPage enterPhoneNumber(String Phone){
-		enterById("CreateLead.PhoneNumber.Id", Phone);
+		enterById(prop.getProperty("CreateLead.PhoneNumber.Id"), Phone);
 		return this;
 	}
 	
 	public CreateLeadPage enterEmailAddress(String email){
-		enterById("CreateLead.EmailAddress.Id", email);
+		enterById(prop.getProperty("CreateLead.EmailAddress.Id"), email);
 		return this;
 	}
 	

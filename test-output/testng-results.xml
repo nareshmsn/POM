@@ -1,109 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="0" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="27" started-at="2017-04-06T01:19:07Z" finished-at="2017-04-06T01:19:07Z">
+  <suite name="Default suite" duration-ms="54843" started-at="2017-04-08T05:26:53Z" finished-at="2017-04-08T05:27:48Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="27" started-at="2017-04-06T01:19:07Z" finished-at="2017-04-06T01:19:07Z">
-      <class name="pages.CreateLeadPage">
-        <test-method status="FAIL" signature="beforeSuite()[pri:0, instance:null]" name="beforeSuite" is-config="true" duration-ms="0" started-at="2017-04-06T06:49:07Z" finished-at="2017-04-06T06:49:07Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:178)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:298)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
-	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+    <test name="Default test" duration-ms="54843" started-at="2017-04-08T05:26:53Z" finished-at="2017-04-08T05:27:48Z">
+      <class name="testcases.TC007_DeleteLead">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:testcases.TC007_DeleteLead@13fcdbd]" name="beforeSuite" is-config="true" duration-ms="1370" started-at="2017-04-08T10:56:52Z" finished-at="2017-04-08T10:56:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeSuite -->
-        <test-method status="FAIL" signature="beforeTest()[pri:0, instance:null]" name="beforeTest" is-config="true" duration-ms="0" started-at="2017-04-06T06:49:07Z" finished-at="2017-04-06T06:49:07Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:178)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.beforeRun(TestRunner.java:647)
-	at org.testng.TestRunner.run(TestRunner.java:615)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
-	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:testcases.TC007_DeleteLead@13fcdbd]" name="beforeTest" is-config="true" duration-ms="1" started-at="2017-04-08T10:56:53Z" finished-at="2017-04-08T10:56:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="FAIL" signature="afterTest()[pri:0, instance:null]" name="afterTest" is-config="true" duration-ms="0" started-at="2017-04-06T06:49:07Z" finished-at="2017-04-06T06:49:07Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:178)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.TestRunner.afterRun(TestRunner.java:1027)
-	at org.testng.TestRunner.run(TestRunner.java:627)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:359)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:354)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:312)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
-	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="setData()[pri:0, instance:testcases.TC007_DeleteLead@13fcdbd]" name="setData" is-config="true" duration-ms="0" started-at="2017-04-08T10:56:53Z" finished-at="2017-04-08T10:56:53Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setData -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:testcases.TC007_DeleteLead@13fcdbd]" name="beforeMethod" is-config="true" duration-ms="8160" started-at="2017-04-08T10:56:55Z" finished-at="2017-04-08T10:57:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="login(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.TC007_DeleteLead@13fcdbd]" name="login" duration-ms="43494" started-at="2017-04-08T10:57:03Z" data-provider="fetchData" finished-at="2017-04-08T10:57:46Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[DemoSalesManager]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[crmsfa]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Demo Sales Manager]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[9944121392]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:testcases.TC007_DeleteLead@13fcdbd]" name="afterMethod" is-config="true" duration-ms="1543" started-at="2017-04-08T10:57:46Z" finished-at="2017-04-08T10:57:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:testcases.TC007_DeleteLead@13fcdbd]" name="afterTest" is-config="true" duration-ms="1" started-at="2017-04-08T10:57:48Z" finished-at="2017-04-08T10:57:48Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="FAIL" signature="afterSuite()[pri:0, instance:null]" name="afterSuite" is-config="true" duration-ms="0" started-at="2017-04-06T06:49:07Z" finished-at="2017-04-06T06:49:07Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:178)
-	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:138)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:329)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:261)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1185)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1110)
-	at org.testng.TestNG.run(TestNG.java:1018)
-	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:112)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:205)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:176)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:testcases.TC007_DeleteLead@13fcdbd]" name="afterSuite" is-config="true" duration-ms="857" started-at="2017-04-08T10:57:48Z" finished-at="2017-04-08T10:57:49Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
-      </class> <!-- pages.CreateLeadPage -->
+      </class> <!-- testcases.TC007_DeleteLead -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

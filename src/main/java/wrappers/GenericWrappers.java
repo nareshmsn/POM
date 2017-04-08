@@ -109,7 +109,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 				}
 			}
 
-		//	driver.manage().window().maximize();
+			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.get(sUrl);
 
@@ -217,7 +217,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	public void verifyTextByXpath(String xpath, String text){
 		try {
 			String sText = driver.findElementByXPath(xpath).getText();
-			if (sText.equalsIgnoreCase(text)){
+			if (sText.trim().equalsIgnoreCase(text.trim())){
 				reportStep("The text: "+sText+" matches with the value :"+text, "PASS");
 			}else{
 				reportStep("The text: "+sText+" did not match with the value :"+text, "FAIL");
@@ -236,7 +236,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	public void verifyTextContainsByXpath(String xpath, String text){
 		try{
 			String sText = driver.findElementByXPath(xpath).getText();
-			if (sText.contains(text)){
+			if (sText.trim().contains(text.trim())){
 				reportStep("The text: "+sText+" contains the value :"+text, "PASS");
 			}else{
 				reportStep("The text: "+sText+" did not contain the value :"+text, "FAIL");
@@ -255,7 +255,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	public void verifyTextById(String id, String text) {
 		try{
 			String sText = driver.findElementById(id).getText();
-			if (sText.equalsIgnoreCase(text)){
+			if (sText.trim().equalsIgnoreCase(text.trim())){ //Used Trim Function to remove the leading and ending space
 				reportStep("The text: "+sText+" matches with the value :"+text, "PASS");
 			}else{
 				reportStep("The text: "+sText+" did not match with the value :"+text, "FAIL");
@@ -274,7 +274,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	public void verifyTextContainsById(String id, String text) {
 		try{
 			String sText = driver.findElementById(id).getText();
-			if (sText.contains(text)){
+			if (sText.trim().contains(text.trim())){
 				reportStep("The text: "+sText+" contains the value :"+text, "PASS");
 			}else{
 				reportStep("The text: "+sText+" did not contain the value :"+text, "FAIL");

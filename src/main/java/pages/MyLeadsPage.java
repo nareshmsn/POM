@@ -27,4 +27,9 @@ public class MyLeadsPage extends LeafTapsWrappers  {
 		return new FindLeadsPage(driver, test);
 	}
 	
+	public MergeLeadsPage clickMergeLeads(){
+		clickByLink(prop.getProperty("MyLeads.MergeLeads.Link"));
+		return new MergeLeadsPage(driver, test);
+	}
+	
 }

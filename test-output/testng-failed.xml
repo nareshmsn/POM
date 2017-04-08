@@ -3,16 +3,18 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testcases.TC003_CreateLead">
+      <class name="testcases.TC007_DeleteLead">
         <methods>
-          <include name="beforeTest"/>
-          <include name="afterSuite"/>
-          <include name="beforeSuite"/>
-          <include name="login"/>
-          <include name="afterTest"/>
           <include name="setData"/>
+          <include name="beforeTest"/>
+          <include name="afterMethod"/>
+          <include name="afterSuite"/>
+          <include name="login" invocation-numbers="0"/>
+          <include name="beforeSuite"/>
+          <include name="afterTest"/>
+          <include name="beforeMethod"/>
         </methods>
-      </class> <!-- testcases.TC003_CreateLead -->
+      </class> <!-- testcases.TC007_DeleteLead -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

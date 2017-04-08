@@ -7,6 +7,8 @@ import com.relevantcodes.extentreports.ExtentTest;
 import wrappers.LeafTapsWrappers;
 
 public class EditLeadPage extends LeafTapsWrappers  {
+	
+	//public static String CompanyName = "";
 
 	public EditLeadPage(RemoteWebDriver driver, ExtentTest test){
 		this.driver = driver;
@@ -18,16 +20,20 @@ public class EditLeadPage extends LeafTapsWrappers  {
 	}
 
 
-	public EditLeadPage clickFindLead(String data){
-		enterById("EditLead.AnnualRevenue.Id", data);
+	public EditLeadPage editLastName(String LastName){
+		enterById(prop.getProperty("EditLead.LastName.Id"), LastName);
 		return this;
 	}
 
 	public ViewLeadPage clickUpdateButton(){
-		clickByXpath("EditLead.UpdateButton.Xpath");
+		clickByXpath(prop.getProperty("EditLead.UpdateButton.Xpath"));
 		return new ViewLeadPage(driver, test);
-
-
 	}
+	
+	/*public ViewLeadPage verifyCompanyName(String CompName){
+		verifyTextContainsById("ViewLead.verifyverifyCompanyName.Id", CompName);
+		return new ViewLeadPage(driver, test);
+	}*/
+	
 
 }

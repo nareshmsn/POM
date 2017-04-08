@@ -2,24 +2,26 @@ package testcases;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
+import pages.FindLeadsPage;
 import pages.LoginPage;
 import wrappers.LeafTapsWrappers;
 
-public class TC004_EditLead extends LeafTapsWrappers{
+public class TC007_DeleteLead extends LeafTapsWrappers{
 
 	@BeforeClass
 	public void setData() {
-		testCaseName="Edit Lead (positive)";
-		testDescription="Edit Lead in Leaf Taps";
+		testCaseName="Duplicate Lead (positive)";
+		testDescription="Duplicate Leads in Leaf Taps";
 		browserName="chrome";
-		dataSheetName="TC004";
+		dataSheetName="TC006";
 		category="regression";
 		authors="Suren";
 	}
 
 	@Test(dataProvider="fetchData")
 	public void login(String userName, String password, String loggedInName, 
-			String firstName,  String lastName){
+			String phoneNumber) throws InterruptedException{
 
 		new LoginPage(driver, test)
 		.enterUserName(userName)
@@ -29,14 +31,15 @@ public class TC004_EditLead extends LeafTapsWrappers{
 		.clickCRMSFA()
 		.clickLeads()
 		.clickFindLead()
-		.enterFirstName(firstName)
+		.clickPhoneTab()
+		.enterPhoneNumber(phoneNumber)
 		.clickFindLeadsButton()
 		.clickFirstLead()
-		.clickEditButton()
-		.editLastName(lastName)
-		.clickUpdateButton()
-		.verifyLastName(lastName);
-
+		.clickDeleteButton()
+		.clickFindLead()
+		.enterLeadId(FindLeadsPage.LeadIdOfFirstLead)
+		.clickFindLeadsButton()
+		.verifyNoRecordsFoundMsg();
 	}
 
 }
