@@ -11,7 +11,7 @@ public class TC004_EditLead extends LeafTapsWrappers{
 	public void setData() {
 		testCaseName="Edit Lead (positive)";
 		testDescription="Edit Lead in Leaf Taps";
-		browserName="chrome";
+		browserName="firefox";
 		dataSheetName="TC004";
 		category="regression";
 		authors="Suren";

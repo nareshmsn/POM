@@ -30,7 +30,7 @@ public class LeafTapsWrappers extends GenericWrappers {
 		test = startTestCase(testCaseName, testDescription);
 		test.assignCategory(category);
 		test.assignAuthor(authors);
-		invokeApp(browserName);
+		invokeApp(browserName, true); //Change this to add true if need to run remote. Else leave it only with browserName to run locally.
 	}
 		
 	@AfterSuite

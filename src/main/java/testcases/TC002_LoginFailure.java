@@ -11,7 +11,7 @@ public class TC002_LoginFailure extends LeafTapsWrappers{
 	public void setData() {
 		testCaseName="Login(Negative)";
 		testDescription="Negative Scenarios of Login";
-		browserName="chrome";
+		browserName="firefox";
 		dataSheetName="TC002";
 		category="Sanity";
 		authors="Gopi";

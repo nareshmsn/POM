@@ -79,7 +79,7 @@ public class GenericWrappers extends Reporter implements Wrappers {
 	 * 
 	 */
 	public void invokeApp(String browser) {
-		invokeApp(browser,false);
+		invokeApp(browser); 
 	}
 
 	/**
